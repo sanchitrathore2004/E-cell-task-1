@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+}
+#parent{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    width: 100%;
+    height: 3vmax;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2vmax;
+}
+.nav2{
+    width: 100%;
+    height: 4vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+.heading,
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vmax;
+    gap: 2vmax;
+    margin: 2vmax;
+}
+.heading > p{
+    font-size: 2vmax;
+    font-weight: 800;
+}
+.description > p{
+    font-size: 1.2vmax;
+}
+.description > p:hover{
+    color: rgb(219, 147, 13);
+    cursor: pointer;
+}
+#left > p{
+   transition: text-decoration 0.5s, color 0.5s ease;
+}
+#left > p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: orangered;
+}
+#right > p:hover{
+    cursor: pointer;
+}
+#content{
+    width: 100%;
+    height: calc(100% - 7vmax);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#left,
+#right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vmax;
+    gap: 2vmax;
+} 
+#logo{
+    width: 2.3vmax;
+    height: 2.3vmax;
+    border-radius: 0.5vmax;
+}
+#options{
+    display: none;
+}
+#search{
+    width: 1.8vmax;
+    height: 1.8vmax;
+}
+#up{
+    margin-top: 6.5vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmax;
+}
+#else{
+    width: 100%;
+    height: 30vmax;
+    background-color: black;
+    margin-top: 5vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#images{
+    width: 45vmax;
+    height: 23vmax;
+}
+#video{
+    width: 100%;
+    height: 45vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#specs{
+    width: 100%;
+    height: 270vmax;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 6vmax;
+    gap: 4vmax;
+}
+.spec-img{
+    width: 40vmax;
+    height: 50vmax;
+}
+#note{
+    padding: 6vmax;
+    font-size: 1.3vmax;
+    color: gray;
+}
+#footer{
+    width: 100%;
+    height: 48vmax;
+    background-color: rgb(25, 24, 24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vmax;
+}
+#top{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 6vmax;
+}
+#bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8vmax;
+}
+#copyright{
+    color: white;
+    margin: 2vmax;
+}
+#one,
+#two,
+#three,
+#four,
+#five{
+    color: gray;
+    display: flex;
+     flex-direction: column;
+    gap: 1vmax;
+}
+#one > p:hover,
+#two > p:hover,
+#three > P:hover,
+#four > p:hover,
+#five > p:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #model{
+        font-size: 1vmax;
+    }
+    #note-text{
+        font-size: 1vmax;
+    }
+    #note{
+        margin-top: 10vmax;
+        height: 50vmax;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer{
+        font-size: 1vmax;
+        height: 60vmax;
+    }
+    #top{
+        margin-top: 5vmax;
+        justify-content: center;
+    }
+    #left > p {
+        display: none;
+    }
+    #options{
+        display: block;
+        width: 2.3vmax;
+        height: 2.3vmax;
+    }
+}
